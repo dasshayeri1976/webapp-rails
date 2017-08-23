@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     authenticated :user do
       root 'students#index', as: :authenticated_root
+      get '/users/sign_out' => 'devise/sessions#destroy'
     end
 
     unauthenticated do
@@ -14,8 +15,8 @@ Rails.application.routes.draw do
   
   
   get 'videos/index' => 'students#video_index'
-  get 'canvas/index' => 'students#canvas_index'
-
+  get 'btc/index' => 'students#btc'
+  get 'live/index' => 'students#live_chat'
   get 'dsalgo/index' => 'ds_algotext_tutorial#index'
   get 'dsalgo/algorithms_basics' => 'ds_algotext_tutorial#algorithms_basics'
   get 'dsalgo/array_data_structure' => 'ds_algotext_tutorial#array_data_structure'

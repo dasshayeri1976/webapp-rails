@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>Data Structures and Algorithms</title>
+<%= stylesheet_link_tag 'ds2.scss' %>
+ <center><h1>LearnOnline</h1></center>
+	  <center><h7>-an online study point</h7></center>
+	   <hr/>
+</head>
+<body>
+<div style="background-color:#FFFFE0;height:1090px;width:1260px;">
+<class><h1><center>Welcome to live class session!!</center></h1></class>
+<center><h5>In order to continue for live chat please make the payment with btc in the following address</h5></center>
+<center><h5>You can also use litecoin, dogecoin or etherum etc</h5></center>
+<center><h5>Scan QR code below</h5></center>
+<div align="center"><%= image_tag("btc.png", :size => "200x180", :alt => "BTC wallet") %></div>
+<center><h5>OR</h5></center>
+<center><h5>Type the following address in your wallet </h5></center>
+<center><button>1AxHjucuUvwRyNwAS6hcasbH8KfK9c3H6e</button></center>
+<center><%= link_to 'Pay Now', live_index_path %></center>
+<center><%= link_to 'Pay Later', authenticated_root_path %></center>
+</body>
+</html>
